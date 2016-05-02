@@ -39,7 +39,7 @@ restore_quagga()
 		cp $i/usr.local.etc.quagga/Quagga.conf /tmp/pycore.$numberAmbience/$i/usr.local.etc.quagga/		
 	done
 	rm -rf $myLocation/giraffe_dir
-	echo "Please, restart quagga on your nodes, before on your \'real quagga\':"
+	echo "Please, restart quagga on your nodes, before on your \"real quagga\":"
 	echo "Execute: /etc/init.d/quagga-mr restart"
 }
 
@@ -50,7 +50,7 @@ fi
 
 if [ `ps aux | grep pycore | wc -l` -lt 2 ]; then
 	echo "Error: The CORE environment isn't running. Start it."
-exit 0
+	exit 0
 fi
 
 myLocation=$(pwd)
