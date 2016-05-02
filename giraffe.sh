@@ -43,7 +43,10 @@ restore_quagga()
 	echo "Execute: /etc/init.d/quagga-mr restart"
 }
 
-# incluir nesta linha teste de usuário "root"
+if [ `id -u` != "0" ]; then
+	echo "You need root power."
+	exit 0
+fi
 
 if [ `ps aux | grep pycore | wc -l` -lt 2 ]; then
 	echo "Error: The CORE environment isn't running. Start it."
