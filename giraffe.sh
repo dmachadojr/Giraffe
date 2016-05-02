@@ -3,7 +3,7 @@
 # script name: giraffe.sh
 # autor: Dorival M. Machado Jr.
 # e-mail: dorivaljunior gmail com
-# objective: save or restore Quagga.conf files from all nodes on CORE
+# objective: saves or restores Quagga.conf files from all nodes on CORE
 #-----------
 
 save_quagga()
