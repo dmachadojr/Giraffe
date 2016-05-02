@@ -3,13 +3,13 @@
 # script name: giraffe.sh
 # autor: Dorival M. Machado Jr.
 # e-mail: dorivaljunior gmail com
-# objective: save or restore Quagga.conf files from nodes on CORE
+# objective: save or restore Quagga.conf files from all nodes on CORE
 #-----------
 
 save_quagga()
 {
 	echo "---|SAVE|---"
-	echo -n "Number of your ambience (verify the title on CORE): "
+	echo -n "Number of your environment (verify the title on CORE): "
 	read numberAmbience
 	echo -n "File name to save as (without space character and without extension): "
 	read newName
@@ -26,7 +26,7 @@ save_quagga()
 restore_quagga()
 {
 	echo "---|RESTORE|---"
-	echo -n "Number of your ambience (verify the title on CORE): "
+	echo -n "Number of your environment (verify the title on CORE): "
 	read numberAmbience
 	echo -n "Complete file name without extension (.tar): "
 	read P
@@ -46,7 +46,7 @@ restore_quagga()
 # incluir nesta linha teste de usuário "root"
 
 if [ `ps aux | grep pycore | wc -l` -lt 2 ]; then
-	echo "Error: The CORE ambience isn't running. Start it."
+	echo "Error: The CORE environment isn't running. Start it."
 exit 0
 fi
 
