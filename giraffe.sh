@@ -32,7 +32,7 @@ restore_quagga()
 	read P
 	mkdir giraffe_dir
 	cd giraffe_dir
-	tar -xvf ../$P 
+	tar -xvf ../$P.tar 
         confs=$( ls | grep .conf)
  	for i in $confs; do
 		echo "Updating $i..."
