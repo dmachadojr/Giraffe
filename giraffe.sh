@@ -39,7 +39,7 @@ restore_quagga()
 		cp $i/usr.local.etc.quagga/Quagga.conf /tmp/pycore.$numberAmbience/$i/usr.local.etc.quagga/		
 	done
 	rm -rf $myLocation/giraffe_dir
-	echo "Please, restart quagga on your nodes, before on your \"real quagga\":"
+	echo "Please, restart quagga on your all nodes:"
 	echo "Execute: /etc/init.d/quagga-mr restart"
 }
 
