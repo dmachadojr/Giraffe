@@ -4,6 +4,12 @@
 # autor: Dorival M. Machado Jr.
 # e-mail: dorivaljunior gmail com
 # objective: saves or restores Quagga.conf files from all nodes on CORE
+#     Instructions:
+#       First, open your environment on CORE; 
+#       Then, execute the script; 
+#       Finally, restart quagga service on your all nodes. 
+#       For the correct operation of this script, the configuration commands must be made on Quagga.conf file.
+#       The modifications made by vtysh not work because these commands are not "saved" in Quagga.conf (temporary file)
 #-----------
 
 save_quagga()
